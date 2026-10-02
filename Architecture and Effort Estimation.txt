@@ -1,0 +1,18 @@
+For the given details in the attachment, provide list of AI Agents which can be proposed to replace the requirements. The list should be in a tabular form with current action/task and equivalent AI Agent + details about whether it is fully autonomous agent or Agent with Human in the Loop. This list can have duplicate agents to provided exact details mapping to requirements. 
+
+Subsequently create unique agent list which should be consider for implementation approach, plan and effort estimations.
+
+Provide the plan by breakdown activities like the below for the given proposed agent count.
+Discovery & Analysis
+Design
+Agent Development
+Integration
+Testing
+Compliance Validation
+Go Live
+Hypercare
+
+Provide resource requirements and resource loading for the given duration. The resource should be consolidated group like Architect if enterprise architect, solution architect, data architect ets involve, AI Engineer/ML Engineer etc in one group, Frontend and backend teams as one group etc.
+
+
+ 

@@ -1,0 +1,9 @@
+Tone and Style Analysis Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Analyze the tone and style of the attached document. Describe the tone (e.g., formal, informal, persuasive, informative) and the style (e.g., academic, conversational, technical). Provide multiple examples from the text to support your analysis. Additionally, explain how the tone and style contribute to the overall effectiveness of the document. I want you to [mention how you want the output in detail with examples].
+
+Get Shushant Lakhyani’s stories in your inbox
+Join Medium for free to get updates from this writer.
+
+Enter your email
+Subscribe

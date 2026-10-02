@@ -1,0 +1,28 @@
+By considering the following details, please create an implementation approach for the proposed solution which should be ready by May 2025. So provide the detailed approach, resource requirements and skill set and duration required.
+
+Functional Requirement
+As a Compliance Complaints Manager I need the ability to find and report on all Complaints (in-progress and resolved/ verbal and non-verbal) for the past 7 years to address business, regulatory and litigation queries
+
+Proposal: Expand existing Target Operating Model Complaints Database to store all Complaints related data required for reporting (historical and current). Subset of Complaints data are already loaded in TOM DB; only 7 data attributes exist in DB currently. Need to expand the scope of Complaints records and attributes captured. Enhance user interface for searching and reporting. Systems in scope for 1 time data migration: CCMS (Dynamics), CCIS (PEGA), TeamConnect (SaaS), Genie (Oral Complaints). Target System is TOM DB (MSSQL). Raw Data extracts will be available from source systems for 1 time load
+
+Task: Expand TOM data model to account for 150+ attributes and Oral/Non oral Complaints
+Consideration: Currently TOMs only covers 7 key attributes
+
+Task: Enhance CCMS – TOM listener to cover 150+ attributes
+Consideration: Existing listener to load subset of Complaints data in TOMs needs to be expanded. TOMs DB needs to be refreshed intraday ~ 1hour from CCMS
+
+Task: Map CCIS/TC/Genie Historical data to new TOMs data model
+Consideration: Some Oral Complaints will flow through CCMS, some will flow through Genie. Transformation logic will be required in order to map the 3 sources to the new data model 
+
+Task: Migrate Historical Data from CCIS/TC/Genie in TOM DB
+Consideration: Completeness and accuracy validation
+
+Task: Update existing Complaints Data already in TOM DB
+Consideration: Existing TOM Complaints will need to be updated to include the additional fields (for WM/USB)
+
+Task: Implement PowerBI infrastructure and dashboards (min 4) to allow users to filter and export data 
+Consideration: Need to discuss entitlement requirements (Potentially Mirror Dynamics entitlements; not PowerPages. This includes coverage requirements) 
+
+Consideration: Task: Implement Searching capabilities 
+
+Can you provide the implementation approach to expand existing Target Operating Model (TOM) Complaints Database (MSSQL) to store all Complaints related data required for reporting (historical and current). There are 7 attributes sent from CCMS through Kafka and Java which needs to be expanded to accomodate 150 attributes which will be refreshed ever hour from CCMS by Enhancing CCMS – TOM listener to cover 150+ attributes. There will be a one time historical data migration from CCIS (PEGA), TeamConnect (SaaS), Genie (Oral Complaints) to TOMs DB for 400K records. Also needs to enhance Angular based user interface for searching TOMs DB and Power BI Reporting. Historical data will be available in csv files. The solution should be ready by June 2025 starting from Jan 2025. Please help with the detailed agile plan, resource requirements, duration for each resource and task. ETL Tool to be Talend.

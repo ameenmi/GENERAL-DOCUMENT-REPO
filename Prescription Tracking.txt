@@ -1,0 +1,1 @@
+I am an individual want to manage all the prescription from out patient visit including medical test reports by accessing the documents from image/pdf files and  stored them in json format. The extracted data should be displayed in proper user interface as a tabular form showing date, diagnosed for, suggested medicine, duration. The tool should support for file upload also.

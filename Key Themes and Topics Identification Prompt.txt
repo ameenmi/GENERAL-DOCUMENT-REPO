@@ -1,0 +1,3 @@
+Key Themes and Topics Identification Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Examine the provided document and identify the primary themes and topics discussed. List each theme or topic along with a brief explanation. Provide relevant excerpts from the text that illustrate each identified theme or topic. Ensure that all significant themes and topics are covered comprehensively. I want you to [mention how you want the output in detail with examples].

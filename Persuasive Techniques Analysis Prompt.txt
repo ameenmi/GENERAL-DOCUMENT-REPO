@@ -1,0 +1,5 @@
+Persuasive Techniques Analysis Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Examine the attached document and identify any persuasive techniques used by the author, such as appeals to emotion, logical reasoning, or use of evidence. For each technique identified, provide specific examples from the text and assess their effectiveness. Additionally, explain how these techniques contribute to the overall persuasive power of the document. I want you to [mention how you want the output in detail with examples].
+
+

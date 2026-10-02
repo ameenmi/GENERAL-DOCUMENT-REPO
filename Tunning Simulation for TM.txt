@@ -1,0 +1,3 @@
+Create an Agentic AI assisted Tuning Simulation for compliance application Transaction Monitoring to enable automatic periodic threshold tuning based on configured frequency and user initiated ad-hon threshold tunning to adhere to procedural requirements. Create industry standard procedural requirements to follow.
+
+Enable ability to project potential business impact due to threshold changes and capture proper documentation on outcome of each tuning cycle.

@@ -1,0 +1,352 @@
+Below is a **professional “master prompt”** you can paste into **Lovable / GenSpark / Codex** to iteratively build an **Agentic AI–driven SDLC accelerator** with **maker–checker governance**, **super-admin controls**, and **auditable workflows**. I’ve also included a set of **catchy product-name options** (choose one), plus a **build protocol** so the code can be created **incrementally and safely** (iteration-by-iteration).
+
+I’m grounding this prompt style on proven internal “AI for SDLC” expectations such as end-to-end coverage (analysis → design → dev → test → docs), quality standards, and avoiding UI shortcuts like Streamlit/Gradio. [\[Use Case_F...for SDLC 7 \| Word\]](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1), [\[Tools to b...ighlighted \| Outlook\]](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+
+***
+
+## 1) Product / Solution Name (choose one)
+
+Pick a professional, catchy name (you can replace later):
+
+*   **Spec2Ship Studio**
+*   **Req2Release Copilot**
+*   **FlowForge SDLC AI**
+*   **Blueprint-to-Build AI**
+*   **Arcadia SDLC Orchestrator**
+*   **Catalyst Requirements-to-Code Suite**
+*   **ForgeWorks Agentic SDLC**
+
+*(In the prompt below I’ll use **“Spec2Ship Studio”**—replace as needed.)*
+
+***
+
+## 2) Copy‑Paste Master Prompt for Lovable / GenSpark / Codex
+
+### ✅ SYSTEM / PRIMARY INSTRUCTION (Paste this whole block)
+
+You are a **senior software architect + lead engineer** building **“Spec2Ship Studio”**, an **Agentic AI–based SDLC acceleration platform** that transforms **documents/images → requirements → user stories → specs → code → tests → deployment scripts**, with **maker–checker governance**, **super-admin administration**, and **complete auditability**.
+
+#### A) Core Outcomes (must fully implement)
+
+Create a web application that delivers these capabilities end-to-end:
+
+1.  **Analyze & extract business requirements** from **documents (PDF/DOCX/TXT)** or **images (PNG/JPG)** using OCR when needed.
+2.  **Generate user stories** from extracted requirements.
+3.  **Generate functional + technical specifications** from user stories.
+4.  **Generate front-end + back-end code** from technical specs.
+5.  **Generate test cases** from the generated code (unit + API tests).
+6.  **Generate deployment scripts** from specs + code + tests (Docker + run scripts).
+
+These deliverables must demonstrate **comprehensive AI usage across analysis, design, development, testing, and documentation**, with emphasis on **quality and completeness**. [\[Use Case_F...for SDLC 7 \| Word\]](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1), [\[Tools to b...ighlighted \| Outlook\]](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+
+#### B) Governance Model (Maker–Checker + Super Admin)
+
+Implement **role-based access & workflow approvals**:
+
+*   **Maker**: uploads docs/images, triggers generation steps, drafts artifacts.
+*   **Checker**: reviews each stage output, requests changes, approves/rejects.
+*   **Super Admin**: full privileges—manage users/roles, prompts/templates, system config, view all audits, override approvals.
+
+Every stage must be **gated** (Maker generates → Checker approves → next step unlocks).  
+All actions must be logged to an **immutable audit trail**.
+
+#### C) Tech Stack (strict)
+
+*   **Backend**: Python with **FastAPI** (primary REST API) + a **Flask compatibility layer** (thin wrapper or separate service) as required by constraints.
+*   **Database**: **SQLite** for persistence (use SQLAlchemy).
+*   **Auth**: secure session/JWT + password hashing (bcrypt/argon2).
+*   **UI**: simple web UI (server-rendered templates or a lightweight SPA).  
+    **Do NOT use Streamlit or Gradio**. [\[Use Case_F...for SDLC 7 \| Word\]](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1), [\[Tools to b...ighlighted \| Outlook\]](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+*   **LLM/Agents**: implement an **agentic workflow orchestration** approach: planning → task decomposition → specialized agents → tool execution → human approval gates. [\[Platform S...solutions \| PowerPoint\]](https://tcscomprod-my.sharepoint.com/personal/166226_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7BD22AA49A-1C3D-4AF2-8A81-9A9B6AA994BE%7D&file=Platform%20Strategy%20for%20AI%20solutions.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1), [\[RISK.AI So...Transcript \| Video\]](https://tcscomprod-my.sharepoint.com/personal/123911_tcs_com/_layouts/15/viewer.aspx?sourcedoc={e1b78f93-b55f-46cd-9d4d-dd947e6dcbef})
+
+#### D) Agentic Workflow Design (required)
+
+Implement these agents (each as modular services/classes):
+
+1.  **Ingestion Agent**: file upload, type detection, text extraction, OCR for images.
+2.  **Requirement Extraction Agent**: identifies and structures business requirements.
+3.  **User Story Agent**: converts requirements into epics/features/user stories with acceptance criteria.
+4.  **Spec Agent**: produces functional spec + technical spec (APIs, data model, NFRs).
+5.  **CodeGen Agent**: generates FE/BE code skeleton + core modules based on tech spec.
+6.  **TestGen Agent**: generates unit tests + API tests derived from code & specs.
+7.  **Deploy Agent**: creates Dockerfile(s), compose, run scripts, env templates, basic CI workflow.
+8.  **Governance/Audit Agent**: enforces maker–checker gating, logs prompts/outputs, redacts secrets.
+
+Include an orchestration layer that can execute steps as a **Flow** (multi-step) or **Task** (single action) and supports template-driven flows. [\[RISK.AI So...Transcript \| Video\]](https://tcscomprod-my.sharepoint.com/personal/123911_tcs_com/_layouts/15/viewer.aspx?sourcedoc={e1b78f93-b55f-46cd-9d4d-dd947e6dcbef}), [\[Platform S...solutions \| PowerPoint\]](https://tcscomprod-my.sharepoint.com/personal/166226_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7BD22AA49A-1C3D-4AF2-8A81-9A9B6AA994BE%7D&file=Platform%20Strategy%20for%20AI%20solutions.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1)
+
+#### E) Data Model (minimum tables)
+
+Create SQLite tables (SQLAlchemy) to persist everything:
+
+*   users, roles, role\_assignments
+*   projects (workspace for an initiative)
+*   artifacts (requirements, user stories, specs, code bundles, tests, deploy scripts)
+*   artifact\_versions (versioning + diff metadata)
+*   workflows (pipeline instances per project)
+*   workflow\_steps (status: drafted/submitted/approved/rejected)
+*   approvals (maker submission + checker decision)
+*   prompts (prompt templates, versioned)
+*   runs (LLM runs, tool runs, timestamps, token usage metadata if available)
+*   audit\_logs (who/what/when, before/after references, IP/user-agent if feasible)
+
+All artifacts must support: **status, version, owner, approver, timestamps, traceability links**.
+
+#### F) Screens / UX (must provide)
+
+Provide at least these screens/pages:
+
+1.  Login / logout
+2.  Project dashboard (projects list + create)
+3.  Upload screen (document/image upload + preview)
+4.  Pipeline/workflow screen (stepper: Requirements → Stories → Specs → Code → Tests → Deploy)
+5.  Artifact viewer (compare versions, diff, export)
+6.  Maker submission screen (submit for approval)
+7.  Checker review queue (approve/reject/request changes with comments)
+8.  Admin console (super admin: users/roles, prompts, configurations, audit search)
+
+#### G) API Endpoints (minimum)
+
+Expose REST endpoints for:
+
+*   auth (login/logout/me)
+*   users/roles (admin only)
+*   projects CRUD
+*   uploads (doc/image)
+*   workflow create/run step/retry
+*   artifacts CRUD + versions + export
+*   approvals submit/review
+*   audit log query
+
+#### H) Quality & Engineering Standards (strict)
+
+*   Follow clean architecture: routers/controllers → services → agents → repositories.
+*   Include automated tests for core endpoints and services.
+*   Provide structured logging, exception handling, and input validation.
+*   Maintain clear documentation and configuration hygiene. [\[Use Case_F...for SDLC 7 \| Word\]](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1), [\[Tools to b...ighlighted \| Outlook\]](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+
+***
+
+### ✅ ITERATIVE DELIVERY PROTOCOL (critical)
+
+You must generate the solution **iteratively**. In each iteration, output:
+
+1.  **What changed** (brief)
+2.  **Files added/updated** (tree)
+3.  **Code** (complete file contents for changed files)
+4.  **How to run** (commands)
+5.  **How to test** (commands)
+
+**Do not attempt everything at once.** Start with a working skeleton and expand.
+
+***
+
+### ✅ BUILD PLAN (milestones)
+
+**Iteration 1 – Foundation**
+
+*   Repo structure, FastAPI app, SQLite + SQLAlchemy, migrations, health endpoint, basic UI placeholder, base models.
+
+**Iteration 2 – Auth & RBAC**
+
+*   Users/roles, login/logout, super-admin bootstrap, protected routes.
+
+**Iteration 3 – Projects + Upload**
+
+*   Project CRUD, upload doc/image, text extraction + OCR stub.
+
+**Iteration 4 – Maker–Checker Workflow**
+
+*   Workflow engine, steps, submission, checker queue, approvals, audit logging.
+
+**Iteration 5 – Agents for Requirements → Stories → Specs**
+
+*   Implement first 3 agents with prompt templates + artifact versioning.
+
+**Iteration 6 – CodeGen + TestGen + Deploy**
+
+*   Generate code bundle, tests, Docker scripts, export.
+
+**Iteration 7 – Hardening**
+
+*   Validation, rate limits, redaction, better UI, packaging, docs.
+
+Stop after each iteration and wait for my next instruction.
+
+***
+
+### ✅ CONSTRAINTS / NON‑NEGOTIABLES
+
+*   Must support maker–checker gating & super-admin controls.
+*   Must persist all artifacts and approvals in SQLite.
+*   Must not use Streamlit/Gradio.
+*   Must keep outputs auditable (prompt + response + approver chain).
+*   Must keep the UI clean and professional.
+
+Now begin **Iteration 1**.
+
+***
+
+## 3) Optional “Add‑On” Prompt Snippets (use as you guide iterations)
+
+You can paste these as follow-up instructions during the build.
+
+### A) Prompt for Maker–Checker rules (when iteration reaches workflow)
+
+“Implement strict step gating: Maker can draft artifacts; only Checker approval moves the workflow to next step. Super-admin can override with a recorded reason. Add status transitions and enforce them in both API and UI.”
+
+### B) Prompt for Artifact quality & formatting
+
+“Ensure each artifact is exported in both JSON and Markdown. Requirements must include IDs, priority, assumptions, out-of-scope, and traceability links to source pages.”
+
+### C) Prompt for LLM safety/controls
+
+“Add output validation, PII/secret redaction, and store prompt/response hashes in audit\_logs. Never store API keys in plaintext.”
+
+***
+
+## 4) One quick note (to avoid confusion)
+
+You asked for “**Python Flask, using FastAPI**.” The cleanest way is:
+
+*   **FastAPI as the primary backend API**, and
+*   a **minimal Flask layer** either as (a) a separate microservice for any legacy endpoints, or (b) a thin wrapper for specific routes.  
+    The prompt above enforces this without blocking progress.
+
+***
+
+If you tell me which UI direction you prefer—**server-rendered (Jinja)** or a **light SPA**—I can tailor the prompt to produce the most maintainable screens without adding heavy complexity.
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+You are a senior software architect + lead full‑stack engineer. Build an Agentic AI–based SDLC acceleration platform named “Spec2Ship Studio” (professional, catchy product name) that transforms documents/images into complete SDLC outputs with strict maker–checker governance, super‑admin controls, and auditability.
+
+GOAL (End‑to‑End Outcomes)
+Implement a web application that delivers these capabilities end‑to‑end:
+1) Analyze and extract business requirements from a document (PDF/DOCX/TXT) or an image (PNG/JPG) using OCR when needed.
+2) Generate user stories (epics/features/stories + acceptance criteria) from the extracted requirements.
+3) Generate functional and technical specifications from user stories.
+4) Generate front‑end and back‑end code from technical specifications.
+5) Generate test cases from the generated code (unit tests + API tests).
+6) Generate deployment scripts from specs + code + tests (Docker + run scripts + basic CI template).
+The solution must demonstrate comprehensive AI use across analysis/design/development/testing/documentation and prioritize deliverable quality and completeness. [1](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1)[2](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+
+STRICT GOVERNANCE (Maker–Checker + Super Admin)
+Roles:
+- Maker: upload documents/images, trigger generation steps, draft/edit artifacts, submit for approval.
+- Checker: review outputs at each step, approve/reject/request changes with comments.
+- Super Admin: full privileges—manage users/roles, configure prompts/templates, view/search audits, override approvals with mandatory reason logging.
+Rules:
+- Each stage is gated: Maker drafts → submits → Checker approves → next step unlocks.
+- All actions are recorded in an immutable audit trail (who/what/when + before/after references, artifacts, approvals, prompt/run metadata).
+
+TECH STACK (NON‑NEGOTIABLE)
+Frontend:
+- ReactJS (TypeScript preferred) using Vite for tooling.
+- UI library: Material UI (MUI) or equivalent professional component library.
+- Auth-aware routing + role-based navigation.
+Backend:
+- FastAPI as the primary REST API service.
+- A thin Flask compatibility layer (either mounted routes or a small companion service) to satisfy the Flask requirement while keeping FastAPI primary.
+Persistence:
+- SQLite database for all persisted data using SQLAlchemy ORM; migrations via Alembic.
+Security:
+- JWT-based auth (access/refresh) or secure server sessions; password hashing (bcrypt/argon2).
+- Input validation (Pydantic), structured logging, exception middleware.
+UX constraint:
+- Do NOT use Streamlit or Gradio for the UI. [1](https://tcscomprod-my.sharepoint.com/personal/842508_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7B87EC7D0B-85E3-4CAB-8DB4-B18242D4F9A5%7D&file=Use%20Case_Friday%20AI%20Day%2020th%20Feb%202025%20AI%20for%20SDLC%207.docx&action=default&mobileredirect=true&DefaultItemOpen=1)[2](https://outlook.office365.com/owa/?ItemID=AQMkADdjMDc2OGYxLTVmMWMtNGE3ZS1iYTk1LWEwZjNkNjI4NzA1ZQBGAAAD2gVb1wVaEUC9uCTq8%2br0QgcAsI%2bWZ2tPWkGweH2RJ5%2faVAAAAgEMAAAAsI%2bWZ2tPWkGweH2RJ5%2faVAAHvkZbGQAAAA%3d%3d&exvsurl=1&viewmodel=ReadMessageItem)
+
+AGENTIC WORKFLOW DESIGN (REQUIRED)
+Create an orchestration layer that supports:
+- “Task” (single capability) and “Flow” (multi-step pipeline) execution modes. [3](https://tcscomprod-my.sharepoint.com/personal/123911_tcs_com/Documents/Recordings/RISK.AI%20Solution%20rollout%20on%20WisdomNext-20260325_150158-Meeting%20Transcript.mp4?web=1)[4](https://tcscomprod-my.sharepoint.com/personal/166226_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7BD22AA49A-1C3D-4AF2-8A81-9A9B6AA994BE%7D&file=Platform%20Strategy%20for%20AI%20solutions.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1)
+- Template-driven flows (e.g., Requirements→Stories→Specs→Code→Tests→Deploy).
+- Human-in-the-loop approval gates tied to maker–checker workflow.
+Agents (modular services/classes; each produces versioned artifacts):
+1) Ingestion Agent: file upload, type detection, text extraction (PDF/DOCX/TXT), OCR for images.
+2) Requirement Extraction Agent: extracts structured business requirements; links requirements to source evidence.
+3) User Story Agent: generates epics/features/stories with acceptance criteria.
+4) Spec Agent: generates functional spec + technical spec (APIs, data model, NFRs, architecture notes).
+5) CodeGen Agent: generates FE/BE code scaffolding and key modules from technical spec.
+6) TestGen Agent: generates unit + API tests derived from code/specs.
+7) Deploy Agent: generates Dockerfile(s), docker-compose (optional), run scripts, .env template, basic CI workflow.
+8) Governance/Audit Agent: enforces step gating, logs prompts/outputs/runs, redacts secrets/PII where applicable.
+Orchestrator responsibilities: planning → task decomposition → agent execution → tool calls → validation → approval routing. [4](https://tcscomprod-my.sharepoint.com/personal/166226_tcs_com/_layouts/15/Doc.aspx?sourcedoc=%7BD22AA49A-1C3D-4AF2-8A81-9A9B6AA994BE%7D&file=Platform%20Strategy%20for%20AI%20solutions.pptx&action=edit&mobileredirect=true&DefaultItemOpen=1)[3](https://tcscomprod-my.sharepoint.com/personal/123911_tcs_com/Documents/Recordings/RISK.AI%20Solution%20rollout%20on%20WisdomNext-20260325_150158-Meeting%20Transcript.mp4?web=1)
+
+MINIMUM DATA MODEL (SQLite tables)
+Implement SQLAlchemy models for:
+- users, roles, role_assignments
+- projects (workspace)
+- uploads (source files + extracted text + metadata)
+- workflows (instances per project), workflow_steps (status lifecycle)
+- artifacts (requirements, stories, specs, code bundles, tests, deploy scripts)
+- artifact_versions (versioning, diffs metadata, lineage)
+- approvals (submission + decision + comments)
+- prompts (template library, versioned; per-agent)
+- runs (LLM runs + tool runs + timestamps + result hashes)
+- audit_logs (append-only events; actor, action, entity, timestamps, references)
+
+TRACEABILITY & VERSIONING (REQUIRED)
+- Every artifact must store: type, status, version, owner, reviewer, timestamps, parent links, source references (upload/page range where applicable), and approval chain.
+- Export artifacts as Markdown + JSON.
+- Record prompt template version + run identifiers + output hashes in audit logs.
+
+REQUIRED SCREENS (React)
+1) Login / logout
+2) Project dashboard (list/create/open)
+3) Upload screen (doc/image upload + preview + extracted text view)
+4) Workflow screen (stepper: Requirements → Stories → Specs → Code → Tests → Deploy)
+5) Artifact viewer (read-only + diff/compare versions + export)
+6) Maker submission panel (submit step for approval + notes)
+7) Checker review queue (approve/reject/request changes + comments)
+8) Admin console (super-admin: users/roles, prompts/templates, system settings, audit search)
+
+MINIMUM API ENDPOINTS (FastAPI)
+- Auth: POST /auth/login, POST /auth/refresh, POST /auth/logout, GET /auth/me
+- Admin: CRUD /admin/users, CRUD /admin/roles, assign roles
+- Projects: CRUD /projects
+- Uploads: POST /uploads, GET /uploads/{id}, GET /uploads/{id}/text
+- Workflows: POST /workflows, GET /workflows/{id}, POST /workflows/{id}/steps/{step}/run, POST /workflows/{id}/steps/{step}/submit
+- Approvals: GET /approvals/queue (checker), POST /approvals/{id}/decision
+- Artifacts: GET /artifacts, GET /artifacts/{id}, GET /artifacts/{id}/versions, GET /artifacts/{id}/export
+- Audit: GET /audit (filter by project/user/action/date)
+
+ENGINEERING STANDARDS (STRICT)
+- Clean architecture: API layer → services → agents → repositories.
+- Automated tests: pytest for backend; React testing library for UI basics.
+- Structured logging + error handling; validation for all inputs.
+- No secrets stored in plaintext; add redaction in logs and stored runs.
+- Provide clear README with run/test steps. 
+
+ITERATIVE DELIVERY PROTOCOL (CRITICAL)
+Generate the solution iteratively. In EACH iteration, output:
+1) What changed (brief)
+2) File tree (only relevant parts)
+3) Full code for files added/modified
+4) How to run (commands)
+5) How to test (commands)
+Do not attempt everything at once—start with a working skeleton and expand.
+
+BUILD MILESTONES (FOLLOW THIS ORDER)
+Iteration 1 – Foundation:
+- Monorepo structure (frontend/ + backend/), FastAPI app skeleton, Flask compatibility layer stub, SQLite + SQLAlchemy + Alembic, health endpoint, base models, placeholder React app.
+Iteration 2 – Auth & RBAC:
+- Users/roles, super-admin bootstrap, JWT/session auth, protected routes (API + React).
+Iteration 3 – Projects + Upload:
+- Project CRUD, upload doc/image, extraction pipeline (OCR stub acceptable but wired).
+Iteration 4 – Maker–Checker Workflow:
+- Workflow engine, statuses, submission, checker queue, approvals, audit logging.
+Iteration 5 – Agents (Requirements → Stories → Specs):
+- Implement first 3 agents + prompt templates + artifact versioning.
+Iteration 6 – CodeGen + TestGen + Deploy:
+- Generate code bundles, tests, Docker/deploy scripts, export.
+Iteration 7 – Hardening:
+- Validation, redaction, rate limits, better UI polish, documentation.
+
+NOW BEGIN ITERATION 1.
+Stop after Iteration 1 output and wait for my next instruction.

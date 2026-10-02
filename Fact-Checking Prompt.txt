@@ -1,0 +1,4 @@
+Fact-Checking Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Analyze the attached document and identify all factual claims made by the author. Verify the accuracy of these claims using reliable external sources. For each claim, provide a brief report on its validity, including citations from your sources. Highlight any discrepancies or confirmations found during the verification process. I want you to [mention how you want the output in detail with examples].
+

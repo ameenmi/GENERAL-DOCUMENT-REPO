@@ -1,0 +1,3 @@
+Summarization Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Analyze the attached document thoroughly and provide a concise summary. Ensure the summary captures the main points, key arguments, supporting evidence, and the conclusions drawn by the author. Maintain the original context and intent while keeping the summary brief. I want you to [mention how you want the output in detail with examples].

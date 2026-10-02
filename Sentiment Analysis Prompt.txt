@@ -1,0 +1,3 @@
+Sentiment Analysis Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Read the attached document and perform a sentiment analysis. Determine if the overall sentiment is positive, negative, or neutral. Identify specific sentences or paragraphs that exemplify this sentiment. Additionally, explain how the choice of words, tone, and context contribute to the identified sentiment. I want you to [mention how you want the output in detail with examples].

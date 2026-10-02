@@ -1,0 +1,5 @@
+Structure and Organization Analysis Prompt
+
+You are an expert analyst. I am [mention the problem you’re facing in detail with context]. Analyze the structure and organization of the following document. Describe how the document is structured, including sections such as introduction, body, and conclusion. Evaluate the effectiveness of this structure in conveying the author’s message. Provide examples from the text that illustrate the organization and flow of information. I want you to [mention how you want the output in detail with examples].
+
+
